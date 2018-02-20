@@ -45,6 +45,7 @@ headsProb = 0.5
 #trials = 1000
 
 trial1 = Game()
+print (trial1.simulate())
 print(trial1.get_expected_reward())
 
 
@@ -63,7 +64,6 @@ class Cohort:
         for new_game in self.listgames:
 
             new_game.simulate()
-
             value = new_game.get_expected_reward()
             self._reward.append(value)
 
